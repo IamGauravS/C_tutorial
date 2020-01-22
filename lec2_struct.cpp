@@ -8,10 +8,19 @@ struct Rectangle{
 };
 
 
+struct Card{
+    int face;   // total 6 bytes
+    int shape;
+    int color;
+};
+
+
 int main(){
 
     struct Rectangle r;   // just declaration
     struct Rectangle r1 ={10,5};   // assignment and declaration
+
+    struct Card deck[52];        //312 bytes
 
     r.length = 15;
     r.bredth = 10;
